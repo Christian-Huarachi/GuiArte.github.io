@@ -33,6 +33,11 @@ li:hover{
 .item4{grid-area: nav-4}
 .buscador{grid-area: buscador}
 
+/*.nav > ul{
+    display: flex;
+    justify-content: space-around;
+}*/
+
 .nav > ul{
     display: grid;
     grid-template-areas:
