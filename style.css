@@ -1,0 +1,140 @@
+body{
+    background-color:rgb(32, 32, 32);
+}
+
+
+
+/*----- INICIO -----*/
+
+
+
+/*------- GRID NAV ---------*/
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+li:hover{
+    opacity: 80%;
+    background-color: red;
+}
+.buscador{
+    margin: 0%;
+    padding: 0%;
+    justify-content: center;
+}
+.buscador-item{
+    height: 35px;
+}
+
+.item1{grid-area: nav-1}
+.item2{grid-area: nav-2}
+.item3{grid-area: nav-3}
+.item4{grid-area: nav-4}
+.buscador{grid-area: buscador}
+
+.nav > ul{
+    display: grid;
+    grid-template-areas:
+    'nav-1  nav-2  nav-3  nav-4  buscador';
+    gap: 10px;
+    background-color: black;
+    padding: 10px;
+}
+.nav > ul > li {
+text-align: center;
+padding: 10px 0;
+font-size: 20px;
+border-radius: 10px;
+}
+.nav > ul > li > a{
+    text-decoration: none;
+    color: white;
+}
+
+/*------- GRID NAV ---------*/
+
+/*------- GRID ARTICLE ---------*/
+
+main{
+    background-color:black;
+    margin:0 20%;
+    padding: 0%;
+}
+h2{
+    text-align: center;
+    color:white;
+    padding:10px 0 0 0;
+}
+
+.sec-pri{grid-area:sec-pri}
+.seccion1{grid-area: seccion1}
+.seccion2{grid-area: seccion2}
+.seccion3{grid-area: seccion3}
+.seccion4{grid-area: seccion4}
+
+.main-inicio > section{
+    display: grid;
+    grid-template-areas:
+    'sec-pri sec-pri'
+    'seccion1 seccion2'
+    'seccion3 seccion4';
+    gap: 10px;
+    padding: 10px; 
+}
+.main-inicio > section > div {
+    background-color: rgba(248, 248, 248, 0.8);
+    padding: 10px 0;
+    font-size: 20px;
+    display: block;
+    justify-content: center;
+}
+h3{
+    text-align: center;
+}
+.main-inicio > section > div > img{
+    width: 100%;
+}
+
+/*------- GRID ARTICLE ---------*/
+footer{
+    background-color: rgb(0, 0, 137);
+    padding: 20px;
+}
+/*----- INICIO -----*/
+
+/*----- GUIA -----*/
+
+.main-guia > div > div > img{
+    width: 100%;
+}
+.main-guia > div{
+    color: white;
+    display: flex;  
+}
+
+/*------- GRID ---------*/
+
+.img{grid-area:img}
+.descripcion{grid-area: descripcion}
+
+.main-guia > div{
+    display: grid;
+    grid-template-areas:
+    'img descripcion descripcion';
+    gap: 10px;
+    padding: 10px; 
+}
+
+/*------- GRID ---------*/
+
+/*----- GUIA -----*/
+
+
+/*----- CONTACTO -----*/
+
+.formulario{
+    padding: 400px 0;
+}
+
+/*----- CONTACTO -----*/
