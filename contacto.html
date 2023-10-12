@@ -7,28 +7,40 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav class="nav">
-        <ul>
-            <li class="item1"><a href="index.html">Inicio</a></li>
-            <li class="item2"><a href="guia.html">Guias</a></li>
-            <li class="item3"><a href="">Item 3</a></li>
-            <li class="item4"><a href="contacto.html">Contacto</a></li>
-            <div class="buscador">
-                <input class="buscador-item" type="text" placeholder="Search">
-                <button class="buscador-item" type="button">Search</button>
+    <header>
+        <nav class="nav">
+            <ul>
+                <div class="logo">
+                    <img src="recursos/imgc.jpg" alt="" width="150px">
+                </div>
+                <div class="nav-item">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="guia.html">Guias</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </div>
+                
+            </ul>
+        </nav>
+    </header>
+    <main class="main-contacto">
+            <div class="c-formulario">
+                <form action="" class="formulario">
+                        <label class="f-elemento" for="firsname"> Nombre: </label><br>
+                        <input class="f-elemento" type="text" size="30" name="firsname" id="firsname"><br>
+                        <label class="f-elemento" for="lastname"> Apellido: </label><br>
+                        <input class="f-elemento" type="text" size="30" name="lastname" id="lastname"><br>
+                        <label class="f-elemento" for="mail"> Mail: </label><br>
+                        <input class="f-elemento" type="email" size="40" name="mail" id="mail"><br>
+                        <label class="f-elemento" for="consulta">Mensaje:</label><br>
+                        <textarea class="f-elemento" name="comentario" id="comentario" cols="30" rows="10">Escriba su mensaje..</textarea><br>
+                        <input class="f-elemento" type="submit" value="ENVIAR">
+                        <input type="reset" value="BORRAR">
+                        
+                </form>
             </div>
-        </ul>
-    </nav>
-    <main class="main">
-        <article>
-            <div class="formulario">
-                <!--  Formulario    -->
-                <h1 style="color: white;text-align: center;">Aqui va un Formulario</h1>
-            </div>
-        </article>
-        <footer>
-            <div></div>
-        </footer>
     </main>
+    <footer>
+        <div></div>
+    </footer>   
 </body>
 </html>
