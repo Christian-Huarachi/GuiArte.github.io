@@ -1,5 +1,6 @@
 body{
     background-color:rgb(32, 32, 32);
+    width: 990px; margin: 0 auto;
 }
 
 
@@ -8,63 +9,56 @@ body{
 
 
 
-/*------- GRID NAV ---------*/
+/*------- FLEX NAV ---------*/
 
-ul{
-    list-style-type: none;
-    padding: 0;
-}
-li:hover{
-    opacity: 80%;
-    background-color: red;
-}
-.buscador{
-    margin: 0%;
-    padding: 0%;
+    
+    li:hover{
+        opacity: 80%;
+        background-color: red;
+    }
+
+    .logo{
+        display: flex;
+        flex-flow: row wrap;
+        flex-grow: 0;
+        padding: 0px 20px 0px 0px;
+    }
+    .nav > ul{
+        display: flex;
+        flex-flow: row wrap; /*flex-direction: row; flex-wrap: wrap; */
+        justify-content: space-around;
+        font-size: 20px;
+        background-color: black;
+        padding: 20px 20px;
+        list-style-type: none;
+    }
+    .nav-item{
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        justify-content: space-around;
+        flex-grow: 1;
+    }
+    .nav > ul > div > li {
+    text-align: center;
+    background-color: blue;
     justify-content: center;
-}
-.buscador-item{
-    height: 35px;
-}
+    padding: 10px 0px;
+    width: 150px;
+    /*border-radius: 10px;*/
+    }
 
-.item1{grid-area: nav-1}
-.item2{grid-area: nav-2}
-.item3{grid-area: nav-3}
-.item4{grid-area: nav-4}
-.buscador{grid-area: buscador}
+    .nav > ul > div > li > a{
+        text-decoration: none;
+        color: white;
+    }
 
-/*.nav > ul{
-    display: flex;
-    justify-content: space-around;
-}*/
-
-.nav > ul{
-    display: grid;
-    grid-template-areas:
-    'nav-1  nav-2  nav-3  nav-4  buscador';
-    gap: 10px;
-    background-color: black;
-    padding: 10px;
-}
-.nav > ul > li {
-text-align: center;
-padding: 10px 0;
-font-size: 20px;
-border-radius: 10px;
-}
-.nav > ul > li > a{
-    text-decoration: none;
-    color: white;
-}
-
-/*------- GRID NAV ---------*/
+/*------- FLEX NAV ---------*/
 
 /*------- GRID ARTICLE ---------*/
 
 main{
     background-color:black;
-    margin:0 20%;
-    padding: 0%;
 }
 h2{
     text-align: center;
@@ -137,9 +131,53 @@ footer{
 
 
 /*----- CONTACTO -----*/
+/*article{
+    padding-top: 20px;
+}*/
+
+.main-contacto{
+    background-color: rgb(0, 0, 103);
+    border: solid;
+    border-color: red;
+}
 
 .formulario{
-    padding: 400px 0;
+    background-color: grey;
+    position: relative;
+    width: 400px; margin: 20px auto;
+    border: solid;
+    padding: 40px;
+}
+.c-formulario{
+
+    border: solid 10px;
+}
+.f-elemento{
+    width: 99%;
+    margin: 10px 0;
+    padding: 0;
+    height: 30px;
+    font-size: 18px;
+}
+#cometario{
+    width: 99%;
+    margin: 10px 0;
+    padding: 0;
+    font-size: 18px;
 }
 
 /*----- CONTACTO -----*/
+footer{
+    border: solid;
+    border-color: green;
+}
+
+
+
+
+@media screen and(min-width: 1280px) {
+
+
+
+
+}
