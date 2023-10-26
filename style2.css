@@ -165,13 +165,15 @@ h3{
 
 .img{grid-area:img}
 .descripcion{grid-area: descripcion}
+.guia{grid-area:guia}
 
 .main-guia > div{
     display: grid;
     grid-template-areas:
+    'guia guia guia'
     'img descripcion descripcion';
-    gap: 10px;
-    padding: 10px; 
+    gap: 20px;
+    padding: 20px;
 }
 
 /*------------------- GRID ---------------------*/

@@ -7,9 +7,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="style2.css">
 </head>
-    <script type="text/javascript">
-    window.onload=function() {alert('Bienvenid@s a GuiArte');}
-    </script>
 <body>
     <header>
         <img src="recursos/imgc.jpg" alt="logo" class="logo">
@@ -24,8 +21,12 @@
         </nav>
     </header>
     <main>
-        <article class="main-guia">
-            <div>
+        <article class="main-guia" id="app">
+            <div v-show="spider_visible"><spider class="guia"></spider></div>
+            <div v-show="juego2_visible"><juego2 class="guia"></juego2></div>
+            <div v-show="cocina_visible"><cocina  class="guia"></cocina></div>
+            <div v-show="sobre_visible"><sobre class="guia"></sobre></div>
+            <div v-on:click="show('spider')">
                 <div class="img">
                     <img src="recursos/img.jpg" alt="">
                 </div>
@@ -34,7 +35,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
                 </div>
             </div>
-            <div>
+            <div v-on:click="show('juego2')">
                 <div class="img">
                     <img src="recursos/img.jpg" alt="">
                 </div>
@@ -43,7 +44,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
                 </div>
             </div>
-            <div>
+            <div v-on:click="show('cocina')">
                 <div class="img">
                     <img src="recursos/img.jpg" alt="">
                 </div>
@@ -52,7 +53,7 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
                 </div>
             </div>
-            <div>
+            <div v-on:click="show('sobre')">
                 <div class="img">
                     <img src="recursos/img.jpg" alt="">
                 </div>
@@ -61,20 +62,23 @@
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
                 </div>
             </div>
-            <div>
-                <div class="img">
-                    <img src="recursos/img.jpg" alt="">
-                </div>
-                <div class="descripcion">
-                    <h3>Nombre del juego</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
-                </div>
-            </div>
-        </article>
+            <!--
+            <div v-html="contenidoHTML"></div>
+            <div v-html="contenidoHTML"></div>
+            <div v-html="contenidoHTML"></div>
+            -->
+            
+            
+            
+            
     </main>
     <footer>
         <div></div>
     </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29"></script>
+    <script src="guia.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
