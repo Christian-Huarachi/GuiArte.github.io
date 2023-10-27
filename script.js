@@ -1,4 +1,5 @@
 
+
 document.addEventListener('DOMContentLoaded', function () {
     const nav = document.querySelector("#nav");
     const abrir = document.querySelector("#abrir");
@@ -71,34 +72,54 @@ function validarEnviar(){
 const miAplicacion = Vue.createApp({
     components: {
         'spider': componente1,
-        'juego2': componente2,
-        'cocina': componente3,
-        'sobre': componente4
+        'amongus': componente2,
+        'spider2': componente3,
+        'amongus2': componente4
     },
     data() {
         return {
             spider_visible: false,
-            juego2_visible: false,
-            cocina_visible: false,
-            sobre_visible: false
+            amongus_visible: false,
+            spider2_visible: false,
+            amongus2_visible: false
         }
     },
     methods: {
         show(componente) {
             this.spider_visible = false
-            this.juego2_visible = false
-            this.cocina_visible = false
-            this.sobre_visible = false
+            this.amongus_visible = false
+            this.spider2_visible = false
+            this.amongus2_visible = false
             console.clear()
             console.log(componente)
             if (componente == "spider") {
                 this.spider_visible = true
-            } else if (componente == "juego2") {
-                this.juego2_visible = true
-            } else if (componente == "cocina") {
-                this.cocina_visible = true
-            } else if (componente == "sobre") {
-                this.sobre_visible = true
+                //Te sube la pantalla hasta arriba despues de elegir la guia
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Opciones adicionales: "auto" (predeterminado) o "instant"
+                });
+            } else if (componente == "amongus") {
+                this.amongus_visible = true
+                //Te sube la pantalla hasta arriba despues de elegir la guia
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Opciones adicionales: "auto" (predeterminado) o "instant"
+                });
+            } else if (componente == "spider2") {
+                this.spider2_visible = true
+                //Te sube la pantalla hasta arriba despues de elegir la guia
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Opciones adicionales: "auto" (predeterminado) o "instant"
+                });
+            } else if (componente == "amongus2") {
+                this.amongus2_visible = true
+                //Te sube la pantalla hasta arriba despues de elegir la guia
+                window.scrollTo({
+                    top: 0,
+                    behavior: "smooth" // Opciones adicionales: "auto" (predeterminado) o "instant"
+                });
             }
         }
     }
@@ -106,3 +127,4 @@ const miAplicacion = Vue.createApp({
 
 
 miAplicacion.mount("#app")
+

@@ -93,20 +93,20 @@ h2{
     border: solid burlywood;
 }
 
-.sec-1{grid-area:sec-1}
-.sec-2{grid-area:sec-2}
+/*.sec-1{grid-area:sec-1}
+.sec-2{grid-area:sec-2}*/
 
 .main-inicio{
     background-color:black;
     border: solid blueviolet;
     max-width: 990px; margin: 0 auto;
 }
-.main-inicio{
+/*.main-inicio{
     display: grid;
     grid-template-areas:
     'sec-1 sec-2 sec-2'
     ;
-}
+}*/
 
 
 
