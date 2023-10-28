@@ -93,20 +93,20 @@ h2{
     border: solid burlywood;
 }
 
-.sec-1{grid-area:sec-1}
-.sec-2{grid-area:sec-2}
+/*.sec-1{grid-area:sec-1}
+.sec-2{grid-area:sec-2}*/
 
 .main-inicio{
     background-color:black;
     border: solid blueviolet;
     max-width: 990px; margin: 0 auto;
 }
-.main-inicio{
+/*.main-inicio{
     display: grid;
     grid-template-areas:
     'sec-1 sec-2 sec-2'
     ;
-}
+}*/
 
 
 
@@ -165,13 +165,15 @@ h3{
 
 .img{grid-area:img}
 .descripcion{grid-area: descripcion}
+.guia{grid-area:guia}
 
 .main-guia > div{
     display: grid;
     grid-template-areas:
+    'guia guia guia'
     'img descripcion descripcion';
-    gap: 10px;
-    padding: 10px; 
+    gap: 20px;
+    padding: 20px;
 }
 
 /*------------------- GRID ---------------------*/

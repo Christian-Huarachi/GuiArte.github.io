@@ -21,57 +21,78 @@
         </nav>
     </header>
     <main>
-        <article class="main-guia">
-            <div>
+        <article class="main-guia" id="app">
+            <div v-show="spider_visible"><spider class="guia"></spider></div>
+            <div v-show="amongus_visible"><amongus class="guia"></amongus></div>
+            <div v-show="spider2_visible"><spider2 class="guia"></spider2></div>
+            <div v-show="amongus2_visible"><amongus2 class="guia"></amongus2></div>
+            <div v-on:click="show('spider')" class="scrollToTop">
                 <div class="img">
-                    <img src="recursos/img.jpg" alt="">
+                    <img src="recursos/spider.jpg" alt="">
+                </div>
+                <div class="descripcion">
+                    <h3>Marvel's Spider-Man 2</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
+                </div>
+            </div>
+            <div v-on:click="show('amongus')">
+                <div class="img">
+                    <img src="recursos/amongus.jpg" alt="">
+                </div>
+                <div class="descripcion">
+                    <h3>Among Us</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
+                </div>
+            </div>
+            <div v-on:click="show('spider2')">
+                <div class="img">
+                    <img src="recursos/spider.jpg" alt="">
                 </div>
                 <div class="descripcion">
                     <h3>Nombre del juego</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
                 </div>
             </div>
-            <div>
+            <div v-on:click="show('amongus2')">
                 <div class="img">
-                    <img src="recursos/img.jpg" alt="">
+                    <img src="recursos/amongus.jpg" alt="">
                 </div>
                 <div class="descripcion">
                     <h3>Nombre del juego</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
                 </div>
             </div>
-            <div>
-                <div class="img">
-                    <img src="recursos/img.jpg" alt="">
-                </div>
-                <div class="descripcion">
-                    <h3>Nombre del juego</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
-                </div>
-            </div>
-            <div>
-                <div class="img">
-                    <img src="recursos/img.jpg" alt="">
-                </div>
-                <div class="descripcion">
-                    <h3>Nombre del juego</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
-                </div>
-            </div>
-            <div>
-                <div class="img">
-                    <img src="recursos/img.jpg" alt="">
-                </div>
-                <div class="descripcion">
-                    <h3>Nombre del juego</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed maxime, ex assumenda ea ipsum quasi provident dignissimos aspernatur iusto?</p>
-                </div>
-            </div>
-        </article>
+            <!--
+            <div v-html="contenidoHTML"></div>
+            <div v-html="contenidoHTML"></div>
+            <div v-html="contenidoHTML"></div>
+            -->
+            
+            
+            
+            
     </main>
     <footer>
         <div></div>
     </footer>
+    <script>
+        // Obtén una lista de elementos con la clase "scrollToTop"
+        const scrollToTopDiv = document.querySelector(".scrollToTop");
+        
+        // Agrega un manejador de eventos a cada botón
+        scrollToTopDiv.addEventListener("click", scrollToTop);
+        
+        function scrollToTop() {
+            // Usa el método scrollTo para hacer desplazar la página hacia arriba
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth" // Opciones adicionales: "auto" (predeterminado) o "instant"
+            });
+        }
+        </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29"></script>
+    <script src="guia.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
