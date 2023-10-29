@@ -958,8 +958,14 @@ body {
 .f-input{
   border-radius: 5px;
   border: solid 1px black;
-  width: 100%;
+  width: 100% !important;
 }
 .f-elemento{
   color: black;
+  width: 100%;
+}
+#submit{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 40%;
 }
