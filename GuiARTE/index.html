@@ -42,7 +42,7 @@
         <ul class="navbar-list">
 
           <li class="navbar-item">
-            <a href="#inicio" class="navbar-link" data-nav-link>Inicio</a>
+            <a href="index.html" class="navbar-link" data-nav-link>Inicio</a>
           </li>
 
           <li class="navbar-item">
@@ -50,11 +50,15 @@
           </li>
 
           <li class="navbar-item">
+            <a href="guia.html" class="navbar-link" data-nav-link>Guias</a>
+          </li>
+
+          <li class="navbar-item">
             <a href="#noticias" class="navbar-link" data-nav-link>Noticias</a>
           </li>
 
           <li class="navbar-item">
-            <a href="#" class="navbar-link" data-nav-link>contacto</a>
+            <a href="#" id="mostrar-formulario" class="navbar-link" data-nav-link>contacto</a>
           </li>
 
         </ul>
@@ -76,8 +80,29 @@
 
 
   <main>
+    
+    </div>
     <article>
-
+      <div class="form">
+        <button id="mostrar-formulario">Mostrar Formulario</button>
+        <div class="modal" id="modal">
+          <div class="modal-contenido">
+            <span class="cerrar" id="cerrar">&times;</span>
+            <h2>Formulario</h2>
+            <form name="formulario" method="post" class="formulario" action="https://formspree.io/f/xzblobby" id="formulario">
+              <label class="f-elemento" for="fname"> Nombre: </label><br>
+              <input class="f-input" type="text" size="30" name="fname" id="fname"><br>
+              <label class="f-elemento" for="lname"> Apellido: </label><br>
+              <input class="f-input" type="text" size="30" name="lname" id="lname"><br>
+              <label class="f-elemento" for="email"> Mail: </label><br>
+              <input class="f-input" type="email" size="40" name="email" id="email"><br>
+              <label class="f-elemento" for="consulta">Mensaje:</label><br>
+              <textarea class="f-input" name="comentario" id="comentario" cols="30" rows="5"></textarea><br>
+              <button class="f-input" type="submit" value="ENVIAR"onclick="validarEnviar()"> Enviar</button> 
+          </form>
+          </div>
+        </div>
+      </div>
 
 
       <div class="hero has-before" id="home">
@@ -97,10 +122,6 @@
 
         </div>
       </div>
-
-
-
-
 
 
 
@@ -534,9 +555,6 @@
 
 
   <div class="cursor" data-cursor></div>
-
-
-
 
 
   <script src="./assets/js/script.js"></script>

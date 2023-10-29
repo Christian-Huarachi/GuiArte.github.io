@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GuiARTE</title>
+  <meta name="title" content="Proyecto GuiARTE">
+  <meta name="description" content="Codo a Codo">
+
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Oxanium:wght@400;500;600;700&family=Work+Sans:wght@600&display=swap"
+    rel="stylesheet"> 
+
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+
+  <link rel="preload" as="image" href="./assets/images/hero-banner.png">
+  <link rel="preload" as="image" href="./assets/images/hero-banner-bg.png">
+
+  <script src="https://kit.fontawesome.com/e547f827f8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body id="top">
+
+
+  <header class="header active" data-header>
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="#" height="#" alt="GuiARTE home">
+      </a>
+
+      <nav class="navbar" data-navbar>
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="index.html" class="navbar-link" data-nav-link>Inicio</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#torneos" class="navbar-link" data-nav-link>Torneos</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="guia.html" class="navbar-link" data-nav-link>Guias</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#noticias" class="navbar-link" data-nav-link>Noticias</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" id="mostrar-formulario" class="navbar-link" data-nav-link>contacto</a>
+          </li>
+
+        </ul>
+      </nav>
+
+      <a href="#" class="btn" data-btn>Uníte a nuestra página</a>
+
+      <button class="nav-toggle-btn" aria-label="toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+    </div>
+  </header>
+
+  <main>
+    <article>
+      <div class="form">
+        <button id="mostrar-formulario">Mostrar Formulario</button>
+        <div class="modal" id="modal">
+          <div class="modal-contenido">
+            <span class="cerrar" id="cerrar">&times;</span>
+            <h2>Formulario</h2>
+            <form name="formulario" method="post" class="formulario" action="https://formspree.io/f/xzblobby" id="formulario">
+              <label class="f-elemento" for="fname"> Nombre: </label><br>
+              <input class="f-input" type="text" size="30" name="fname" id="fname"><br>
+              <label class="f-elemento" for="lname"> Apellido: </label><br>
+              <input class="f-input" type="text" size="30" name="lname" id="lname"><br>
+              <label class="f-elemento" for="email"> Mail: </label><br>
+              <input class="f-input" type="email" size="40" name="email" id="email"><br>
+              <label class="f-elemento" for="consulta">Mensaje:</label><br>
+              <textarea class="f-input" name="comentario" id="comentario" cols="30" rows="5"></textarea><br>
+              <button class="f-input" type="submit" value="ENVIAR"onclick="validarEnviar()"> Enviar</button> 
+          </form>
+          </div>
+        </div>
+      </div>
+
+      <section>
+        
+      </section>
+
+      
+
+    </article>
+  </main>
+
+
+
+
+  <footer class="footer">
+
+    <div class="section footer-top">
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="150" height="73" loading="lazy" alt="Unigine logo">
+          </a>
+
+          <p class="footer-text">
+            Ha concluido nuestro sitio web! Esperamos que le haya gustado :D
+          </p>
+
+          <ul class="social-list">
+
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa fa-twitter" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="#" class="social-link">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i>
+              </a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Links que le pueden servir</p>
+
+          <ul>
+
+            <li>
+              <a href="#" class="footer-link">Torneos</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Ayuda</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Privacidad y politicas</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Términos</a>
+            </li>
+
+            <li>
+              <a href="#" class="footer-link">Contactános</a>
+            </li>
+
+          </ul>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Contactános</p>
+
+          <div class="contact-item">
+            <span class="span">Locación:</span>
+
+            <address class="contact-link">
+              ---------------
+            </address>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Uníte</span>
+
+            <a href="mailto:Info@unigine.com" class="contact-link">GuiARTE@gmail.com</a>
+          </div>
+
+          <div class="contact-item">
+            <span class="span">Teléfono:</span>
+
+            <a href="tel:+12345678910" class="contact-link">+54 9 11 8597-9625</a>
+          </div>
+
+        </div>
+
+        <div class="footer-list">
+
+          <p class="title footer-list-title has-after">Consultas y sugerencias</p>
+
+          <form action="./index.html" method="get" class="footer-form">
+            <input type="email" name="email_address" required placeholder="Escribí tu email" autocomplete="off"
+              class="input-field">
+
+            <button type="submit" class="btn" data-btn>Suscribíte</button>
+          </form>
+
+        </div>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2023 derechos reservados a GuiARTE
+        </p>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+
+  <a href="#top" class="back-top-btn" aria-label="back to top" data-back-top-btn>
+    <i class="fa fa-angle-up" aria-hidden="true"></i>
+  </a>
+
+
+
+
+
+
+
+  <div class="cursor" data-cursor></div>
+
+
+
+
+
+  <script src="./assets/js/script.js"></script>
+
+
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>

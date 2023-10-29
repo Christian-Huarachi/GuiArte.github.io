@@ -97,3 +97,45 @@ addEventOnElements(hoverElements, "mouseover", function () {
 addEventOnElements(hoverElements, "mouseout", function () {
   cursor.classList.remove("hovered");
 });
+
+
+
+//MOSTRAR FORMULARIO
+document.getElementById("mostrar-formulario").addEventListener("click", function() {
+  document.getElementById("modal").style.display = "block";
+});
+
+document.getElementById("cerrar").addEventListener("click", function() {
+  document.getElementById("modal").style.display = "none";
+});
+
+
+function validarEnviar(){
+
+  //ANALIZO EL NOMBRE
+  if(document.formulario.fname.value.length <= 2){
+      alert("Ingrese un nombre correcto.")
+      document.formulario.fname.focus()
+      parrafo.innerHTML = "Nombre incorrecto."
+      return
+  }
+  if(document.formulario.lname.value.length <= 2){
+      alert("Ingrese un apellido correcto.")
+      document.formulario.lname.focus()
+      parrafo.innerHTML = "Nombre incorrecto."
+      return
+  }
+
+  // Validad Email
+
+  var emailField = document.getElementById('email');
+  var validEmail =  /^\w+([.-_+]?\w+)*@\w+([.-]?\w+)*(\.\w{2,10})+$/;
+
+  // Usando la prueba podemos verificar si el texto coincide con el patrón.
+  if( validEmail.test(emailField.value) ){
+      return true;
+  }else{
+      alert('El correo electrónico no es válido');
+      return false;
+  }
+}
