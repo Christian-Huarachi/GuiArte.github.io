@@ -98,8 +98,53 @@
         </div>
       </div>
 
-      <section>
-
+      <section class="main-guia" id="app">
+        <div v-show="spider_visible"><spider class="guia"></spider></div>
+        <div v-show="amongus_visible"><amongus class="guia"></amongus></div>
+        <div v-show="spider2_visible"><spider2 class="guia"></spider2></div>
+        <div v-show="amongus2_visible"><amongus2 class="guia"></amongus2></div>
+        <h1 style="text-align: center;color: black;font-size: 30px;">Guias</h1>
+        <div v-on:click="show('spider')" class="guias">
+            <div class="img">
+                <img src="./assets/images/guias/spider.jpg" alt="">
+            </div>
+            <div class="descripcion">
+                <h3>Marvel's Spider-Man 2</h3>
+                <p>Marvel's Spider-Man 2 es un juego para un jugador. Pero podrán jugar con dos personajes, Peter Parker y Miles Morales, y cambiar entre los dos heroicos Spider-Men durante sus aventuras de lucha contra el crimen para vivir y experimentar el estilo de juego, habilidades e historia de cada uno de ellos.
+                </p>
+            </div>
+        </div>
+        <div v-on:click="show('amongus')" class="guias">
+            <div class="img">
+                <img src="./assets/images/guias/amongus.jpg" alt="">
+            </div>
+            <div class="descripcion">
+                <h3>Among Us</h3>
+                <p>Among Us es un juego muy parecido al clásico "El asesino" que hemos jugado alguna vez en cartas, pero llevado al mundo de los videojuegos. Estás en una nave espacial, y dos impostores que están "entre nosotros", de ahí el título, tienen que matar a los otro ocho tripulantes antes de que estos los descubran.
+                </p>
+            </div>
+        </div>
+        <div v-on:click="show('spider2')" class="guias">
+            <div class="img">
+                <img src="./assets/images/guias/spider.jpg" alt="">
+            </div>
+            <div class="descripcion">
+                <h3>Marvel's Spider-Man 2</h3>
+                <p>Marvel's Spider-Man 2 es un juego para un jugador. Pero podrán jugar con dos personajes, Peter Parker y Miles Morales, y cambiar entre los dos heroicos Spider-Men durante sus aventuras de lucha contra el crimen para vivir y experimentar el estilo de juego, habilidades e historia de cada uno de ellos.
+                </p>
+            </div>
+        </div>
+        <div v-on:click="show('amongus2')" class="guias">
+            <div class="img">
+                <img src="./assets/images/guias/amongus.jpg" alt="">
+            </div>
+            <div class="descripcion">
+                <h3>Among Us</h3>
+                <p>Among Us es un juego muy parecido al clásico "El asesino" que hemos jugado alguna vez en cartas, pero llevado al mundo de los videojuegos. Estás en una nave espacial, y dos impostores que están "entre nosotros", de ahí el título, tienen que matar a los otro ocho tripulantes antes de que estos los descubran.
+                </p>
+            </div>
+        </div>
+        
       </section>
 
       
@@ -259,10 +304,11 @@
 
 
 
-
+  <script src="https://cdn.jsdelivr.net/npm/vue@3.2.29"></script>
+  <script src="./assets/js/guia.js"></script>
   <script src="./assets/js/script.js"></script>
-
-
+  
+  
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 
